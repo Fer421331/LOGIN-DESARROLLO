@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace LOGIN_DESARROLLO
+{
+    public partial class frmAdministrador: Form
+    {
+        public frmAdministrador()
+        {
+            InitializeComponent();
+        }
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Form1 loginForm = new Form1(); // Crea una nueva instancia de Form1
+            loginForm.Show(); // Muestra el formulario de inicio de sesión
+            this.Close();
+        }
+    }
+}
